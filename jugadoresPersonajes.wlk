@@ -2,7 +2,17 @@ import armas.*
 import elementos.*
 
 object luisa {
-  
+  var pesonajeActivo = null
+
+  //unPersonaje es mario o floqui
+  method asignarPersonaje(unPersonaje) {
+    pesonajeActivo = unPersonaje
+  }
+  method aparece(unElemento) {
+    pesonajeActivo.encontrar(unElemento)
+  }
+
+  method pesonajeActivo() = pesonajeActivo 
 }
 
 object floki {
